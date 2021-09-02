@@ -1,0 +1,24 @@
+{
+	"date": "2021/04/01",
+	"from": 900,
+	"to": 2030,
+	"unit": 30,
+	"day_schedule": {
+		"title": "Meeting for employment",
+		"location": "California, US"
+	},
+	"plans": [
+		{
+			"from": 900,
+			"to": 1100,
+			"title": "Meeting",
+			"location": "Los Angeles, US"
+		},
+		{
+			"from": 1130,
+			"to": 1400,
+			"title": "Meeting",
+			"location": "Los Angeles, US"
+		}
+	]
+}

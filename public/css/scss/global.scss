@@ -1,0 +1,103 @@
+body {
+	background-color: lightgrey;
+	padding: 0 100px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    padding: 0 10px;
+  }
+}
+
+
+h1 {
+	color: blue;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.position-relative {
+	position: relative;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.justify-content-flex-end {
+	justify-content: flex-end;
+}
+
+.ml-3 {
+	margin-left: 20px;
+}
+
+.plr-3 {
+	padding: 0 20px;
+}
+
+.pl-2 {
+	padding-left: 27px;
+}
+
+.time-basic {
+	border-top: 2px solid lightgrey;
+}
+
+.event-basic {
+	position: absolute;
+	background-color: white;
+	border-left: 10px solid #41bf41;
+	overflow: auto;
+}
+
+$blockLengths: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+
+@each $length in $blockLengths {
+	.flex-#{$length} {
+		flex: #{$length};
+		
+	}
+}
+
+
+@for $i from 900 through 2100 {  
+	@if $i % 100 != 0 {
+		.time-#{$i} { 
+			margin-left : 5%; 
+			border-top: 1px solid lightgrey;
+		}
+	}
+}  
+
+
+/* Event */
+$unit_height: 50px;
+$border_height: 1.5px;
+
+@for $i from 1 through 24 {
+	.event-#{$i} {
+		top: $unit_height * ($i - 1) + ($i - 1) * $border_height + 1px;
+		margin-left: 20px;
+	}
+}
+

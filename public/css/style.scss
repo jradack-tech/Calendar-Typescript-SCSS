@@ -1,0 +1,110 @@
+@import "./scss/global";
+
+
+#app {
+	/*border: 1px solid white;*/
+	box-shadow: 0 3px 5px grey;
+}
+
+.date {
+	height: 70px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 50px;
+}
+
+.day-event {
+	width: 75%;
+	background-color: white;
+	border-left: 10px solid #41bf41;
+	margin: 5px 0 5px 10px;
+}
+
+
+/* AM part */
+.am-bg {
+	background-color: #fff4f5;
+	border-top: 1px solid deeppink;
+	position: relative;
+}
+
+.am-text {
+	color: deeppink;
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 3vw;
+}
+
+
+/* PM part */
+.pm-bg {
+	background-color: #e5f8ff;
+	border-top: 2px solid skyblue;
+	position: relative;
+}
+
+.pm-text {
+	color: deepskyblue;
+	margin-left: 20px;
+	margin-top: 20px;
+	font-size: 3vw;
+}
+
+
+/*Remove the border-top of first child in each time part*/
+#am div:nth-child(1) {
+	border-top: none;
+}
+
+#pm div:nth-child(1) {
+	border-top: none;
+}
+
+.title-text {
+	margin: 5px 0;
+	text-overflow: ellipsis;
+}
+
+.location-text {
+	color: green;
+	margin: 5px 0;
+	padding-top: 0;
+	text-overflow: ellipsis;
+}
+
+.float p {
+	float: left;
+	margin: 16px 5px;
+	text-overflow: ellipsis;
+}
+
+.float {
+	overflow: auto;
+}
+
+
+/*.event-1 {
+	width: calc(25% - 20px);
+	height: 311px;
+	right: 0;
+	top: 208px;
+	margin-right: 20px;
+}
+
+.event-2 {
+	width: calc(25% - 20px);
+	height: 208px;
+	right: 25%;
+	top: 208px;
+	margin-right: 20px;
+}
+
+.event-3 {
+	width: calc(25% - 20px);
+	height: 360px;
+	right: 50%;
+	top: 208px;
+	margin-right: 20px;
+}*/
